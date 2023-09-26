@@ -1,0 +1,256 @@
+.body, html {
+    background-color: #141414; /* Substitua #ff0000 pela cor desejada */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    font-family: 'poppins','sans-serif';
+    cursor: pointer;
+    position: fixed;
+    left: -270px;
+    top: -215px;
+    z-index: 2; 
+}
+
+.menu p.destaque {
+    opacity: 1;
+}
+
+.menu p.destaque .fa-solid {
+    color: #8a00ff;
+}
+
+.cor-texto {
+    font-family: 'Poppins Medium', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 45px;
+    line-height: 1px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease, color 0.1s ease;
+}
+
+.retangulo {
+    background-color: #242424;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Largura fixa */
+    height: 600px; /* Altura fixa */
+    max-width: 100%; /* Largura máxima igual à largura da janela */
+    max-height: 100%; /* Altura máxima igual à altura da janela */
+    overflow: hidden;
+}
+
+
+.quadrado {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 250px;
+    height: 270px;
+}
+
+#quadradoVermelho {
+    opacity: 1;
+    display: block;
+    background-color: rgba(255, 0, 0, 0);
+    
+
+}
+
+#quadradoAzul {
+    display: none;
+    background-color: rgba(0, 0, 255, 0);
+
+}
+
+#quadradoVerde {
+    display: none;
+    background-color: rgba(0, 128, 0, 0);
+
+}
+
+#quadradoVerde .mapa img {
+    width: 250px; /* Largura da imagem desejada */
+    display: block;
+    margin: 40px auto; /* Centraliza a imagem horizontalmente dentro do retângulo */
+}
+
+.botao-vermelho {
+    font-family: 'Poppins Medium', sans-serif;
+    background-color: #363330; /* Cor vermelha */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Remove a borda */
+    border-radius: 16px;
+    padding: 12px 20px; /* Espaçamento interno do botão */
+    font-size: 14px; /* Tamanho da fonte */
+    cursor: pointer; /* Mostrar cursor de clique */
+    display: block; /* Tornar o botão um bloco (para que ele fique abaixo da imagem) */
+    margin: 15px auto; /* Centralizar horizontalmente com margem superior e inferior */
+}
+
+.icone-vermelho {
+    color: #8a00ff; /* Cor vermelha para o ícone */
+}
+
+.menu-container {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(40%);
+    top: calc(50% - 150px - -100px);
+    z-index: 2;
+}
+
+.titulo {
+    margin-top: 0;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.descricao {
+    margin-top: -40px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.juntese {
+    color: #8a00ff;
+    font-weight: 700;
+}
+
+.conteudo {
+
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    width: 250px;
+    height: 150px;
+    position: fixed;
+    text-align: center;
+    bottom: -88px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.rodape2 {
+    width: 250px;
+    height: 150px;
+    position: fixed;
+    text-align: center;
+    bottom: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #ffffff;
+    z-index: 2;
+}
+.rodape2 .ibc-maringa {
+    color: #8a00ff; /* Altere a cor desejada aqui */
+    text-decoration: none;
+}
+
+
+
+
+
+.outer-rectangle {
+    width: 250px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: #00ff0000; /* Cor verde para o retângulo externo */
+    border-radius: 10px;
+}
+
+.circle {
+    width: 100px; /* Dimensões do círculo */
+    height: 90px; /* Dimensões do círculo */
+    background-color: #3498db00; /* Cor do círculo */
+    border-radius: 50%; /* Torna o elemento um círculo */
+    margin-right: 20px; /* Espaço entre o círculo e o retângulo vermelho */
+}
+
+.inner-rectangle {
+    top: 2px;
+    left: -35px;
+    border-radius: 16px;
+    width: 130px;
+    height: 30px;
+    background-color: #414140; /* Cor vermelha */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    position: relative; /* Para posicionamento relativo */
+
+}
+
+.batata {
+    font-size: 20px;
+    font-family: 'Poppins Medium', sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: -28px;
+    left: 5px; /* Centraliza o texto horizontalmente */
+    right: 0; /* Centraliza o texto horizontalmente */
+    text-align: left;
+}
+
+
+.lider-text {
+    color: #8a00ff; 
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    background-color: #535251;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.imagem-customizada {
+
+    width: 60px;
+    height: 60px;
+}
+
