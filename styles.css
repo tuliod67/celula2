@@ -227,6 +227,7 @@
 
 
 .lider-text {
+    opacity: 0%;
     color: #8a00ff; 
     font-size: 12px;
     text-transform: uppercase;
